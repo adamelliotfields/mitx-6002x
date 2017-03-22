@@ -30,8 +30,8 @@ Monte Carlo simulations
 Lecture 1 - Optimization and the Knapsack Problem  
 Lecture 2 - Decision Trees and Dynamic Programming  
 Lecture 3 - Graph Problems  
-Lecture 4 - Plotting
-Lecture 5 - Stochastic Thinking
+Lecture 4 - Plotting  
+Lecture 5 - Stochastic Thinking  
 Lecture 6 - Random Walks
 
 
