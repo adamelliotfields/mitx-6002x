@@ -1,7 +1,7 @@
 ![MITx](mitx.png)
 
 
-# Introduction to Computational Thinking and Data Science.
+# Introduction to Computational Thinking and Data Science
 
 
 ### About This Course
