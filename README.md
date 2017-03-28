@@ -28,16 +28,6 @@ Stochastic programming and statistical thinking
 Monte Carlo simulations
 
 
-### Lectures
-
-Lecture 1 - Optimization and the Knapsack Problem  
-Lecture 2 - Decision Trees and Dynamic Programming  
-Lecture 3 - Graph Problems  
-Lecture 4 - Plotting  
-Lecture 5 - Stochastic Thinking  
-Lecture 6 - Random Walks
-
-
 ### Problem Sets
 
 [Problem Set 1](https://github.com/adamelliotfields/mitx-6002x/tree/master/problem_set-1)  
