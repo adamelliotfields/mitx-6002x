@@ -6,7 +6,7 @@
 
 ### About This Course
 
-[6.00.2x](https://www.edx.org/course/introduction-computational-thinking-data-mitx-6-00-2x-5) will teach you how to use computation to accomplish a variety of goals and provides you with a brief introduction to a variety of topics in computational problem solving . This course is aimed at students with some prior programming experience in Python and a rudimentary knowledge of computational complexity. You will spend a considerable amount of time writing programs to implement the concepts covered in the course. For example, you will write a program that will simulate a robot vacuum cleaning a room or will model the population dynamics of viruses replicating and drug treatments in a patient's body.
+[6.00.2x](https://www.edx.org/course/introduction-computational-thinking-data-mitx-6-00-2x-5) will teach you how to use computation to accomplish a variety of goals and provides you with a brief introduction to a variety of topics in computational problem solving. This course is aimed at students with some prior programming experience in Python and a rudimentary knowledge of computational complexity. You will spend a considerable amount of time writing programs to implement the concepts covered in the course. For example, you will write a program that will simulate a robot vacuum cleaning a room or will model the population dynamics of viruses replicating and drug treatments in a patient's body.
 
 
 ### Topics covered include:
@@ -31,4 +31,8 @@ Monte Carlo simulations
 ### Problem Sets
 
 [Problem Set 1](https://github.com/adamelliotfields/mitx-6002x/tree/master/problem_set-1)  
-[Problem Set 2](https://github.com/adamelliotfields/mitx-6002x/tree/master/problem_set-2)
+[Problem Set 2](https://github.com/adamelliotfields/mitx-6002x/tree/master/problem_set-2)  
+[Problem Set 3](https://github.com/adamelliotfields/mitx-6002x/tree/master/problem_set-3)  
+[Problem Set 4](https://github.com/adamelliotfields/mitx-6002x/tree/master/problem_set-4)  
+[Quiz](https://github.com/adamelliotfields/mitx-6002x/tree/master/quiz)  
+[Final](https://github.com/adamelliotfields/mitx-6002x/tree/master/final)
