@@ -130,8 +130,12 @@ def generate_models(x, y, degs):
         a list of numpy arrays, where each array is a 1-d array of coefficients
         that minimizes the squared error of the fitting polynomial
     """
-    # TODO
-    pass
+    models = []
+    
+    for deg in degs:
+        models.append(np.polyfit(x, y, deg))
+    
+    return models
 
 # Problem 2
 def r_squared(y, estimated):
@@ -143,8 +147,15 @@ def r_squared(y, estimated):
     Returns:
         a float for the R-squared error term
     """
-    # TODO
-    pass
+    mean  = float(sum(y)) / len(y)
+    numerator = 0
+    denomenator = 0
+    
+    for i in range(len(y)):
+        numerator += (y[i] - estimated[i]) ** 2
+        denomenator += (y[i] - mean) ** 2
+    
+    return 1 - numerator / denomenator
 
 # Problem 3
 def evaluate_models_on_training(x, y, models):
@@ -168,8 +179,15 @@ def evaluate_models_on_training(x, y, models):
     Returns:
         None
     """
-    # TODO
-    pass
+    pylab.plot(x, y, 'o', label = 'Recorded Temps')
+     
+    for i in range(len(models)):
+        e_vals = pylab.polyval(models[i], x)
+        error = r_squared(y, e_vals)
+        pylab.plot(x, e_vals, label = 'Fit of degree ' + str(len(models[i])) + ', R2 = ' + str(round(error, 5)))
+    
+    pylab.legend(loc = 'best')
+    pylab.title('Test')
 
 
 ### Begining of program
@@ -178,8 +196,10 @@ raw_data = Climate('data.csv')
 # Problem 3
 y = []
 x = INTERVAL_1
+
 for year in INTERVAL_1:
     y.append(raw_data.get_daily_temp('BOSTON', 1, 10, year))
+
 models = generate_models(x, y, [1])
 evaluate_models_on_training(x, y, models)
 
@@ -188,6 +208,9 @@ evaluate_models_on_training(x, y, models)
 x1 = INTERVAL_1
 x2 = INTERVAL_2
 y = []
-# MISSING LINES
-models = generate_models(x, y, [1])    
-evaluate_models_on_training(x, y, models)
+
+for year in INTERVAL_1:
+    y.append(np.mean(raw_data.get_yearly_temp('BOSTON', year)))
+
+models = generate_models(x1, y, [1])    
+evaluate_models_on_training(x1, y, models)
